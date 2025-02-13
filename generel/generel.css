@@ -10,3 +10,14 @@ img {
   height: auto;
   display: block;
 }
+
+/* Variables */
+:root {
+  --color1: #260101;
+  --color2: #f2a444;
+  --color3: #f2e0d0;
+  --color4: #f2994b;
+  --color5: #d9704a;
+  --color6: #d9042b;
+  --color7: #fcfbf7;
+}
