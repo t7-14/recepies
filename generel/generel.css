@@ -70,10 +70,15 @@ h2 {
 }
 
 h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 10;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--color1);
+}
+
+p {
+  font-family: "Merriweather", serif;
 }
 
 /* Burgermenu */
@@ -220,12 +225,6 @@ input[type="text"] {
   width: 170px;
 }
 
-@media (max-width: 700px) {
-  .search {
-    display: none;
-  }
-}
-
 /* Forside */
 #hero_sektion {
   height: 600px;
@@ -277,4 +276,29 @@ input[type="text"] {
   width: 80%;
   margin: 0 auto;
   gap: 1.2rem;
+}
+
+/* Mobilefirst */
+@media (max-width: 700px) {
+  .search {
+    display: none;
+  }
+
+  main {
+    max-width: 95%;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_1-img {
+    display: flex;
+    flex-direction: column;
+  }
 }
