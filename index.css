@@ -1,0 +1,81 @@
+#hero_sektion {
+  height: 600px;
+  border: 2.5px solid var(--color6);
+  margin: 4rem;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1.2rem;
+}
+
+.grid_1-1 a {
+  width: 100%;
+  place-self: center;
+  text-align: center;
+  padding: 0.6rem;
+  border: 2.5px solid var(--color6);
+  border-radius: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 10;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color6);
+  transition: 0.3s;
+}
+
+.grid_1-1 a:hover {
+  scale: 1.05;
+  transition: 0.3s;
+  color: #d9042b85;
+}
+
+.span_2 {
+  grid-column: 1 / span 2;
+  width: 400px;
+}
+
+#katalog_sektion {
+  margin-bottom: 50px;
+}
+
+.grid_1-1-img {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  width: 80%;
+  margin: 0 auto 50px auto;
+  gap: 1.2rem;
+}
+
+.line {
+  background-color: var(--color6);
+  height: 100%;
+  width: 2.5px;
+}
+
+footer {
+  height: 200px;
+  border: 2.5px solid var(--color6);
+  margin: 4rem;
+}
+
+/* Mobilefirst */
+@media (max-width: 700px) {
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_1-1-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    display: none;
+  }
+}

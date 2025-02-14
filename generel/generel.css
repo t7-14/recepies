@@ -12,12 +12,16 @@ img {
 }
 
 /* Generel */
+html {
+  text-wrap: pretty;
+}
+
 body {
   background-color: var(--color7);
 }
 
 main {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -79,6 +83,7 @@ h3 {
 
 p {
   font-family: "Merriweather", serif;
+  font-size: 0.8rem;
 }
 
 /* Burgermenu */
@@ -225,59 +230,6 @@ input[type="text"] {
   width: 170px;
 }
 
-/* Forside */
-#hero_sektion {
-  height: 600px;
-  border: 2.5px solid var(--color6);
-  margin: 4rem;
-}
-
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin: 0 auto;
-  gap: 1.2rem;
-}
-
-.grid_1-1 a {
-  width: 100%;
-  place-self: center;
-  text-align: center;
-  padding: 0.6rem;
-  border: 2.5px solid var(--color6);
-  border-radius: 25px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 10;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color1);
-  transition: 0.3s;
-}
-
-.grid_1-1 a:hover {
-  scale: 1.05;
-  transition: 0.3s;
-}
-
-.span_2 {
-  grid-column: 1 / span 2;
-  width: 400px;
-}
-
-#katalog_sektion {
-  margin-bottom: 50px;
-}
-
-.grid_1-img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin: 0 auto;
-  gap: 1.2rem;
-}
-
 /* Mobilefirst */
 @media (max-width: 700px) {
   .search {
@@ -290,15 +242,5 @@ input[type="text"] {
 
   h2 {
     font-size: 1.4rem;
-  }
-
-  .grid_1-1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .grid_1-img {
-    display: flex;
-    flex-direction: column;
   }
 }
