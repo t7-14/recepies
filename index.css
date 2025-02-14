@@ -21,17 +21,19 @@
   border-radius: 25px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 10;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color6);
   transition: 0.3s;
+  font-family: "Almarai", sans-serif;
 }
 
 .grid_1-1 a:hover {
   scale: 1.05;
   transition: 0.3s;
-  color: #d9042b85;
+  /* color: #d9042b85; */
+  opacity: 60%;
 }
 
 .span_2 {
@@ -40,15 +42,31 @@
 }
 
 #katalog_sektion {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .grid_1-1-img {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   width: 80%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 75px auto;
   gap: 1.2rem;
+}
+
+.grid_1-1-img img {
+  /* aspect-ratio: 5/4; */
+  object-fit: cover;
+  height: 100%;
+}
+
+.grid_1-1-img p {
+  line-height: 1.5;
+}
+
+@media (max-width: 1150px) {
+  .text_hide {
+    display: none;
+  }
 }
 
 .line {
@@ -75,7 +93,7 @@ footer {
     flex-direction: column;
   }
 
-  .line {
+  .red_line {
     display: none;
   }
 }
