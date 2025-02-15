@@ -69,7 +69,7 @@
   }
 }
 
-.line {
+.red_line {
   background-color: var(--color6);
   height: 100%;
   width: 2.5px;
