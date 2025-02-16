@@ -5,34 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON - Opskrifter</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="generel/generel.css" />
+    <link rel="stylesheet" href="../../generel/generel.css" />
     <link rel="stylesheet" href="b.css" />
     <!-- Javascripts -->
     <script src="b.js" defer></script>
-    <script src="generel/menu.js" defer></script>
+    <script src="b2.js" defer></script>
+    <script src="../../generel/menu.js" defer></script>
+    <script src="../../index.js" defer></script>
     <!-- Skrifttyper -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="header_left">
+      <ul class="menu">
+        <li><a href="">Forside</a></li>
+        <li><a href="">Katalog</a></li>
+        <li><a href="">Breakfast</a></li>
+        <li><a href="">Lunch</a></li>
+        <li><a href="">Dinner</a></li>
+        <li><a href="">Dessert</a></li>
+        <li><a href="">Snacks</a></li>
+        <li><a href="">Beverages</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </nav>
+      </div>
+      <div class="logo">
+<a href="../../index.html"><img src="../../generel/imgs/Logo.svg" alt="Logo"></a>
+      </div>
+        <div class="header_right">
+          <div class="search">
+            <input type="text" placeholder="Søg..">
+            <a href=""><img src="../../generel/imgs/search.svg" alt="Search"></a>
+          </div>
+        </div>
+    </header>
     <main>
       <section id="opskrift_sektion">
-        <h1>Hello world</h1>
+        <!-- <h1>Classic Margherita Pizza</h1>
         <div class="grid_opskrift">
-          <article>
-            <div class="info_1"></div>
-            <div class="info_2"></div>
+          <article class="opdel">
+            <div class="info_1">
+              <div>
+                <p>Prep time:</p>
+                <p>20m</p>
+              </div>
+              <div>
+                <p>Cook time:</p>
+                <p>15m</p>
+              </div>
+              <div>
+                <p>Servings:</p>
+                <p>4</p>
+              </div>
+              <div>
+                <p>Calories:</p>
+                <p>300</p>
+            </div>
+          </div>
+            <div class="info_2">
+              <h3>Ingredients:</h3>
+              <ol>
+                <li>Pizza dough</li>
+                <li>Tomato sauce</li>
+                <li>Fresh mozzarella cheese</li>
+                <li>Fresh basil leaves</li>
+                <li>Olive oil</li>
+                <li>Salt and pepper to taste</li>
+              </ol>
+            </div>
+            <div class="instructions">
+              <h3>Instructions:</h3>
+<ul>
+  <li>Preheat the oven to 475°F (245°C).</li>
+  <li>Roll out the pizza dough and spread tomato sauce evenly.</li>
+  <li>Top with slices of fresh mozzarella and fresh basil leaves.</li>
+  <li>Drizzle with olive oil and season with salt and pepper.</li>
+  <li>Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.</li>
+  <li>Slice and serve hot.</li>
+</ul>
+            </div>
           </article>
-          <article>
-            <img />
-            <div class="info_3"></div>
+          <article class="opdel img_info">
+<img src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="Food" class="info_img">
+<div class="red_line2"></div>
+            <div class="info_3">
+              <div>
+                <p>Ratings:</p>
+                <p>4.6 ★</p>
+              </div>
+              <div>
+                <p>Reviews:</p>
+                <p>98</p>
+              </div>
+              <div>
+                <p>Servings:</p>
+                <p>4</p>
+              </div>
+              <div>
+                <p>Tags:</p>
+                <p>Pizza<br>Italian</p>
+              </div>
+            </div>
           </article>
-        </div>
+        </div> -->
       </section>
       <section id="kommentar_sektion">
-        <div class="kommentar"></div>
+        <h1>SHARE A COMMENT</h1>
+        <div class="kommentar">
+          <input type="text" placeholder="Write a comment...">
+          <button id="send">Send</button>
+        </div>
+        <div class="tak">
+          <p>Thanks for your imput!</p>
+        </div>
       </section>
     </main>
     <footer>
