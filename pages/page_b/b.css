@@ -1,0 +1,143 @@
+header {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid_opskrift {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.info_2 {
+  border: 2.5px solid var(--color6);
+  padding: 0.4rem;
+}
+
+.info_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: space-evenly;
+  border: 2.5px solid var(--color6);
+  padding: 1rem 0.4rem 1rem 0.4rem;
+}
+
+.info_img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 350px;
+}
+
+.instructions {
+  border: 2.5px solid var(--color6);
+  padding: 0.4rem;
+}
+
+.red_line2 {
+  margin: 15px 0 15px 0;
+  background-color: var(--color6);
+  height: 2.5px;
+  width: 100%;
+}
+
+.info_3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.info_3 ul {
+  margin-right: 0;
+}
+
+.img_info {
+  border: 2.5px solid var(--color6);
+  padding: 0.4rem;
+}
+
+.opdel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#kommentar_sektion {
+  margin-top: 4rem;
+}
+
+.kommentar {
+  height: 150px;
+  border: 2.5px solid var(--color6);
+  max-width: 915px;
+  margin: 0 auto 50px auto;
+  display: grid;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+  list-style: none;
+  margin-right: 10px;
+  line-height: 1.3;
+}
+
+.kommentar input[type="text"] {
+  float: inline-start;
+  font-family: "Merriweather", serif;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 1px;
+  width: 100%;
+  height: 145px;
+  padding-bottom: 13%;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+button {
+  padding: 6px;
+  font-size: 0.8rem;
+  color: #757575;
+  background-color: transparent;
+  border: 2.5px solid var(--color6);
+  border-radius: 25px;
+  width: 170px;
+  cursor: pointer;
+  transition: 0.3s;
+  place-self: end;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 1rem;
+}
+button:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+footer {
+  height: 200px;
+  border: 2.5px solid var(--color6);
+  margin: 4rem;
+}
+
+.tak {
+  color: #757575;
+  text-align: center;
+  display: none;
+  height: 150px;
+  padding-top: 3rem;
+}
