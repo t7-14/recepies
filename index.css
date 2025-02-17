@@ -3,7 +3,14 @@
   border: 2.5px solid var(--color6);
   margin: 4rem;
 }
-
+footer {
+  padding: 20px 20px;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--color6);
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+}
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
