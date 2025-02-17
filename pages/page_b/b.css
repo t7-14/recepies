@@ -143,6 +143,13 @@ footer {
 }
 
 /* Mobilefirst */
+
+@media (max-width: 1200px) {
+  .opdel {
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 700px) {
   .grid_opskrift {
     flex-direction: column;
