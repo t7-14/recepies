@@ -141,3 +141,34 @@ footer {
   height: 150px;
   padding-top: 3rem;
 }
+
+/* Mobilefirst */
+
+@media (max-width: 1200px) {
+  .opdel {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid_opskrift {
+    flex-direction: column;
+  }
+
+  .opdel {
+    gap: 1.2rem;
+  }
+
+  .info_img {
+    aspect-ratio: 1/1;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .red_line2 {
+    margin: 0;
+  }
+}
