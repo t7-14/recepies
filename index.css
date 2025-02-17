@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: 1%;
   opacity: 95%;
+  overflow: hidden;
 }
 
 footer {
