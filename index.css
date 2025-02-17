@@ -1,16 +1,26 @@
 #hero_sektion {
   height: 600px;
-  border: 2.5px solid var(--color6);
   margin: 4rem;
+  background-image: url(generel/imgs/food9.webp);
+  background-size: cover;
+  background-position: 1%;
+  opacity: 95%;
 }
+
 footer {
   padding: 20px 20px;
   font-family: "Cormorant Garamond", serif;
-  color: var(--color6);
+  color: antiquewhite;
+  background-color: var(--color6);
   font-weight: lighter;
   display: flex;
   justify-content: space-between;
 }
+
+footer h3 {
+  color: antiquewhite;
+}
+
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
