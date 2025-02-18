@@ -128,12 +128,6 @@ button:hover {
   transition: 0.3s;
 }
 
-footer {
-  height: 200px;
-  border: 2.5px solid var(--color6);
-  margin: 4rem;
-}
-
 .tak {
   color: #757575;
   text-align: center;
