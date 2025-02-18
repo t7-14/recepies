@@ -10,10 +10,9 @@ const difficultySelector = document.getElementById("difficulty-selector");
 
 difficultySelector.addEventListener("change", (event) => {
   let selectedDifficulty = event.target.value;
-  // Update URL without reloading the page
   const url = new URL(window.location.href);
   url.searchParams.set("difficulty", selectedDifficulty);
-  window.history.pushState({}, "", url); // Update URL without reloading
+  window.history.pushState({}, "", url);
   fetchRecipes(selectedDifficulty);
 });
 
