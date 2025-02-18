@@ -16,6 +16,8 @@ article {
   border: 2.5px solid var(--color6);
   border-radius: 1rem;
   cursor: pointer;
+  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
+  grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
 }
 
 article:hover {
@@ -26,7 +28,6 @@ article:hover {
 article a {
   text-decoration: none;
   display: grid;
-  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
   grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
 }
 
