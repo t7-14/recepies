@@ -1,4 +1,7 @@
+// Eventlistener lytter på klik af searchLink
 document.getElementById("searchLink").addEventListener("click", function (event) {
+  // Finder input-elementet med id="searchInput"
+  // Henter .value, som er teksten fra brugeren og sletter mellemrum før og efter med trim
   var searchValue = document.getElementById("searchInput").value.trim();
 
   if (searchValue) {
