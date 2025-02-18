@@ -26,6 +26,17 @@ main {
   margin: 0 auto;
 }
 
+.breadcrum,
+.breadcrum a {
+  margin: 50px 0px;
+  color: gray;
+  text-decoration: none;
+}
+
+.breadcrum a:hover {
+  opacity: 0.5;
+}
+
 /* Variables */
 :root {
   --color1: #260101;
