@@ -24,6 +24,10 @@ article:hover {
   transition: 0.3s;
 }
 
+article a {
+  text-decoration: none;
+}
+
 article img {
   grid-column: span 2;
   aspect-ratio: 9/16;
@@ -41,6 +45,10 @@ article h4 {
   font-family: "", sans-serif;
   color: var(--color6);
   font-family: walkway_ultraexpand_boldRg;
+}
+
+.stats .mealtype {
+  color: var(--color6);
 }
 
 .easy {
