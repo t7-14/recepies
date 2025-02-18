@@ -8,20 +8,6 @@
   overflow: hidden;
 }
 
-footer {
-  padding: 20px 20px;
-  font-family: "Cormorant Garamond", serif;
-  color: antiquewhite;
-  background-color: var(--color6);
-  font-weight: lighter;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer h3 {
-  color: antiquewhite;
-}
-
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -248,6 +248,21 @@ input[type="text"] {
   width: 170px;
 }
 
+/* Footer */
+footer {
+  padding: 20px 20px;
+  font-family: "Cormorant Garamond", serif;
+  color: antiquewhite;
+  background-color: var(--color6);
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: antiquewhite;
+}
+
 /* Mobilefirst */
 @media (max-width: 700px) {
   .search {
