@@ -252,15 +252,15 @@ input[type="text"] {
 footer {
   padding: 20px 20px;
   font-family: "Cormorant Garamond", serif;
-  color: antiquewhite;
-  background-color: var(--color6);
+  color: var(--color1);
+  /* background-color: var(--color6); */
   font-weight: lighter;
   display: flex;
   justify-content: space-between;
 }
 
 footer h3 {
-  color: antiquewhite;
+  color: var(--color1);
 }
 
 /* Mobilefirst */
