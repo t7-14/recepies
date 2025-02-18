@@ -11,6 +11,7 @@
     <script src="a.js" defer></script>
     <script src="../../generel/menu.js" defer></script>
     <script src="../../index.js" defer></script>
+    <script src="../../search.js" defer></script>
     <!-- Skrifttyper -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,12 +37,14 @@
       </nav>
       </div>
       <div class="logo">
-<a href="../../index.html"><img src="/generel/imgs/Logo.svg" alt="Logo"></a>
+<a href="../../index.html"><img src="../../generel/imgs/Logo.svg" alt="Logo"></a>
       </div>
         <div class="header_right">
           <div class="search">
-            <input type="text" placeholder="Search..">
-            <a href=""><img src="../../generel/imgs/search.svg" alt="Search"></a>
+            <input type="text" id="searchInput" placeholder="Search.." />
+            <a id="searchLink" href="pages/page_d/d.html">
+              <img src="../../generel/imgs/search.svg" alt="Search" />
+            </a>
           </div>
         </div>
     </header>
