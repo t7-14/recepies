@@ -4,6 +4,7 @@
   gap: 10px;
   padding: 1rem;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .grid_1-1-1-1 img {
@@ -12,9 +13,7 @@
 
 article {
   display: grid;
-  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
-  grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
-  border: 1px solid var(--color6);
+  border: 2.5px solid var(--color6);
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -26,17 +25,23 @@ article:hover {
 
 article a {
   text-decoration: none;
+  display: grid;
+  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
+  grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
 }
 
 article img {
   grid-column: span 2;
-  aspect-ratio: 9/16;
-  object-fit: contain;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 article h4 {
   grid-column: span 2;
+  font-size: 1.2rem;
 }
+
 .stats {
   display: grid;
   gap: 10px;
@@ -49,25 +54,31 @@ article h4 {
 
 .stats .mealtype {
   color: var(--color6);
+  font-size: 0.6rem;
+  -webkit-text-stroke-width: 0.2px;
 }
 
-.easy {
+.Easy {
   background-color: green;
   padding: 0.2rem;
   color: white;
   border-radius: 1rem;
 }
 
-.medium {
+.Medium {
   background-color: var(--color2);
   padding: 0.2rem;
   color: white;
   border-radius: 1rem;
 }
 
-.hard {
+.Hard {
   background-color: var(--color6);
   padding: 0.2rem;
   color: white;
   border-radius: 1rem;
+}
+
+h2 {
+  margin-top: 50px;
 }

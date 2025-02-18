@@ -1,0 +1,84 @@
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid_1-1-1-1 img {
+  width: 100%;
+}
+
+article {
+  display: grid;
+  border: 2.5px solid var(--color6);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+article:hover {
+  scale: 1.02;
+  transition: 0.3s;
+}
+
+article a {
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
+  grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
+}
+
+article img {
+  grid-column: span 2;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+article h4 {
+  grid-column: span 2;
+  font-size: 1.2rem;
+}
+
+.stats {
+  display: grid;
+  gap: 10px;
+  grid-column: span 2;
+  padding: 1rem;
+  font-family: "", sans-serif;
+  color: var(--color6);
+  font-family: walkway_ultraexpand_boldRg;
+}
+
+.stats .mealtype {
+  color: var(--color6);
+  font-size: 0.6rem;
+  -webkit-text-stroke-width: 0.2px;
+}
+
+.Easy {
+  background-color: green;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.Medium {
+  background-color: var(--color2);
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.Hard {
+  background-color: var(--color6);
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-top: 50px;
+}
