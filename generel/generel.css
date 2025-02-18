@@ -81,6 +81,14 @@ h3 {
   color: var(--color1);
 }
 
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color5);
+}
+
 p {
   font-family: "Merriweather", serif;
   font-size: 0.8rem;

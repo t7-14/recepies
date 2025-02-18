@@ -1,8 +1,7 @@
 .grid_1-1-1-1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  border: solid red;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
   padding: 1rem;
   text-align: center;
 }
@@ -11,20 +10,56 @@
   width: 100%;
 }
 
-.big {
-  grid-column: span 2;
-  grid-row: span 2;
-  border: solid red;
-}
-
-.wide {
-  grid-column: span 2;
+article {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: solid red;
+  grid-template-rows: subgrid; /* Arver RÆKKER fra .container */
+  grid-row: span 4; /* Strækker sig over alle 3 RÆKKER FRA HOVEDGRIDDET */
+  border: 1px solid var(--color6);
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
-.tall {
-  grid-row: span 2;
-  border: solid red;
+article:hover {
+  scale: 1.02;
+  transition: 0.3s;
+}
+
+article img {
+  grid-column: span 2;
+  aspect-ratio: 9/16;
+  object-fit: contain;
+}
+
+article h4 {
+  grid-column: span 2;
+}
+.stats {
+  display: grid;
+  gap: 10px;
+  grid-column: span 2;
+  padding: 1rem;
+  font-family: "", sans-serif;
+  color: var(--color6);
+  font-family: walkway_ultraexpand_boldRg;
+}
+
+.easy {
+  background-color: green;
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.medium {
+  background-color: var(--color2);
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.hard {
+  background-color: var(--color6);
+  padding: 0.2rem;
+  color: white;
+  border-radius: 1rem;
 }
