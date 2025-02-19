@@ -57,32 +57,45 @@ Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktu
 
 Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websitet. Tænk over hvilke interaktioner brugeren kan foretage på sitet? Eller hvordan websitet håndterer og præsenterer data? Eksempler på funktionalitet, der kan beskrives:
 
-- Hentning af produkter fra API.
-- Filtrering af produkter baseret på brugerens valg.
-- Dynamisk visning af produkter i HTML.
-
-Brug korte beskrivelser, som i eksemplerne herover
+- Vi har udviklet vores website med fokus på dynamisk datahåndtering og interaktive funktioner for brugeren. Vores primære datakilde er et API kaldt DummyJSON, hvor vi har valgt at arbejde med kategorien recipes. Dette API indeholder en række opskrifter med forskellige spændende data, som vi har brugt til at opbygge vores side. For at hente og vise data har vi implementeret en fetch-funktion i vores JavaScript, der henter opskrifterne fra API’et og indsætter dem i en CSS-stylet HTML-struktur. Indholdet på siden opdateres dynamisk, hvilket betyder, at når API’et ændrer sig, vil vores website automatisk afspejle disse ændringer uden behov for manuel opdatering.
 
 # API endpoints
 
 Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 
-- (fx. https://dummyjson.com/products)
+- Her er eksempler på hvordan vores endpoint efter .html afgør, hvad der vises på skærmen. Eksempelvis, mealType=breakfast viser morgenmad opskrifter, id=15 viser opskrift nummer 15 og search=Pizza viser alle opskrifter med pizza.
+  http://127.0.0.1:5500/pages/page_c/c.html?mealType=breakfast
+  http://127.0.0.1:5500/pages/page_b/b.html?id=15
+  http://127.0.0.1:5500/pages/page_d/d.html?search=Pizza
 
 # Dokumentation af Funktion
 
 Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelvis være en funktion der generere en listen over fx. produkter:
 
-- Beskrivelse: Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
+- Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
+  Funktionen opdaterer dynamisk et link's URL med en søgeparameter baseret på brugerens input, når der klikkes på linket. Hvis input feltet er tomt, forhindres navigationen
 - Parametre: Hvilke input forventes (fx en værdi fra en dropdown eller URL'en)?
+  Hvis brugeren f.eks. skriver "hello world" i feltet, bliver URL’en opdateret til ...?search=hello%20world.
+  Hvis brugeren ikke indtaster noget, forhindrer koden, at linket åbnes (event.preventDefault();), så brugeren ikke navigerer til en ugyldig side.
 - Returnerer: Beskriv, om funktionen returnerer en værdi eller blot manipulerer DOM’en.
-- Eksempel på brug: Indsæt funktions-koden herunder(der hvor koden er i eksemplet) og vis, hvordan funktionen kaldes:
+  I vores søgefunktion returnerer den en værdi, da den går ind og indhenter den data, som brugeren skriver i feltet.
+- Nedenfor ses vores funktion. Funktionen kaldes automatisk, når brugeren klikker på linket med id="searchLink", fordi den er tilknyttet en eventlistener for klik.
 
 ```javascript
-//funktionens kode:
-function voresFunktion(sprog) {
-  console.log(`${sprog} syntax highlighting`);
-}
-//hvordan funktionen kaldes:
-voresFunktion("JavaScript");
+// Eventlistener lytter på klik af searchLink
+document.getElementById("searchLink").addEventListener("click", function (event) {
+  // Finder input-elementet med id="searchInput"
+  // Henter .value, som er teksten fra brugeren og sletter mellemrum før og efter med trim
+  var searchValue = document.getElementById("searchInput").value.trim();
+
+  if (searchValue) {
+    // Find den aktuelle href (uden domæne)
+    var baseHref = new URL(this.getAttribute("href"), window.location.origin).pathname;
+
+    // Opdater href dynamisk med søgeparameteren
+    this.href = baseHref + "?search=" + encodeURIComponent(searchValue);
+  } else {
+    event.preventDefault(); // Stop navigation hvis input er tomt
+  }
+});
 ```
