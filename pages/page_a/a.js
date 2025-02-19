@@ -10,7 +10,7 @@ function showList(data) {
     .map(
       (recipe) =>
         `  <article>
-            <a href="../pages/page_b/b.html?id=${recipe.id}">
+            <a href="../page_b/b.html?id=${recipe.id}">
               <img src="${recipe.image}" alt="" />
               <h4>${recipe.name}</h4>
               <div class="stats">
